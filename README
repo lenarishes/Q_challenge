@@ -1,0 +1,12 @@
+Task:
+Given a 7 digit telephone number, 
+print out all the possible combination of letters 
+that can represent the given telephone number. 
+Note that in a standard 12 key pad, 0 and 1 do not have any letters 
+associated with them. They are to be treated as such 
+i.e. a 0/1 in the telephone number will be retained as such in the 
+final word as well.
+
+Link:
+http://www.codeeval.com/open_challenges/59/
+
