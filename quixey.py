@@ -2,6 +2,7 @@
 import re
 import sys
 
+# First Quixey challenge
 # Mapping between numbers and characters
 CODES = {'0': '0',
          '1': '1',
