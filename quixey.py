@@ -51,16 +51,11 @@ def tel_words_iter(num):
 #
 test_cases = open(sys.argv[1], 'r')
 for line in test_cases:
-    if line and re.match(r'^[0-9]{7}$', line):
+    # ignore test if it is an empty line
+    if line:
+        assert re.match(r'^[0-9]{7}$', line), "Input should be a 7 digit number"
         line = line.split()[0]        
-        #assert re.match(r'^[0-9]{7}$', line), "Input should be a 7 digit number"
         ls = tel_words_iter(line)
         print ','.join(ls)
 test_cases.close()
-
-if tel_words_rec('4155230') == tel_words_iter('4155230'):
-    print 'Same results'
-else:
-    print 'Smth wrong!!'
-
 
